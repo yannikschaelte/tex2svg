@@ -20,7 +20,7 @@ Currently, there is no automatic installation provided. However, it's not too di
 
 ```sh
 git clone https://github.com/yannikschaelte/tex2svg ~/util/tex2svg
-ln ~/util/tex2svg/tex2svg.sh ~/bin/tex2svg
+ln -s ~/util/tex2svg/tex2svg.sh ~/bin/tex2svg
 ```
 
 Then make sure that ``~/bin`` is contained in the path, such that ``tex2svg`` can be found.
