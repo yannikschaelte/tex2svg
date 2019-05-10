@@ -4,7 +4,7 @@ Convert latex to svg. A typical use would be to turn formulas into images, in or
 
 ## Usage
 
-Call the program as ``tex2svg LATEX_CODE TARGET_FILE.svg``. Example: ``tex2svg '\\exp(i\\cdot\\pi) + 1 = 0' fig.svg``.
+Call the program as ``tex2svg LATEX_CODE TARGET_FILE.svg``. Example: ``tex2svg '\\[\\exp(i\\cdot\\pi) + 1 = 0\\]' fig.svg``.
 
 ## Requirements
 
