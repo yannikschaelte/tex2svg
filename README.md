@@ -8,7 +8,7 @@ Call the program as ``tex2svg LATEX_CODE TARGET_FILE.svg``. Example: ``tex2svg '
 
 ## Requirements
 
-The tool requires ``pdflatex``, ``pdf2svg``to be available. These can easily be installed via
+The tool requires ``pdflatex``, ``pdf2svg`` to be available. These can easily be installed via
  
  ```sh
  sudo apt install pdflatex pdf2svg
