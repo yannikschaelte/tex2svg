@@ -30,4 +30,4 @@ git clone https://github.com/yannikschaelte/tex2svg ~/util/tex2svg
 ln -s ~/util/tex2svg/tex2svg.sh ~/bin/tex2svg
 ```
 
-Then make sure that ``~/bin`` is contained in the path, such that ``tex2svg`` can be found.
+Then make sure that ``~/bin`` is contained in the path, e.g. via ``export PATH = ~/bin:$PATH``, such that ``tex2svg`` can be found.
