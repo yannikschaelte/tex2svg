@@ -10,6 +10,9 @@ Call the program as ``tex2svg LATEX_CODE TARGET_FILE.svg``. Example:
 tex2svg '\\[\\exp(i\\cdot\\pi) + 1 = 0\\]' fig.svg
 ```
 
+Note that currently double instead of single backslashes are required, because the developer was too lazy to check how to get rid of them.
+
+
 ## Requirements
 
 The tool requires ``pdflatex``, ``pdf2svg`` to be available. These can easily be installed via
