@@ -1,0 +1,18 @@
+if [ "$#" -lt 1 ]; then
+  echo "Usage: tex2svg LATEX_CODE (OUTPUT_FILE)"
+  exit -1
+fi
+if [ "$#" -ge 2 ]; then
+  OUT_FILE="$2"
+else
+  OUT_FILE="latex_fig.svg"
+fi
+
+BASE=~/lib/tex2svg
+
+# duplicate backslash
+VAL=$(echo $1 | sed 's/\\/\\\\/g')
+
+sed "s/VAR/$VAL/g" $BASE/latex_fig_template.tex > $BASE/latex_fig.tex
+pdflatex -output-directory $BASE $BASE/latex_fig.tex
+pdf2svg $BASE/latex_fig.pdf $OUT_FILE

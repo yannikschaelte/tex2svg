@@ -4,14 +4,11 @@ Convert latex to svg. A typical use would be to turn formulas into images, in or
 
 ## Usage
 
-Call the program as ``tex2svg LATEX_CODE TARGET_FILE.svg``. Example: 
+Call the program as ``tex2svg LATEX_CODE [TARGET_FILE.svg]``. Example: 
 
 ```sh
-tex2svg '\\[\\exp(i\\cdot\\pi) + 1 = 0\\]' fig.svg
+tex2svg '$$\exp(i\cdot\pi) + 1 = 0$$' fig.svg
 ```
-
-Note that currently double instead of single backslashes are required, because the developer was too lazy to check how to get rid of them.
-
 
 ## Requirements
 
@@ -23,11 +20,12 @@ The tool requires ``pdflatex``, ``pdf2svg`` to be available. These can easily be
  
 ## Installation
 
-Currently, there is no automatic installation provided. However, it's not too difficult nonetheless. Just do:
+Currently, there is no automatic installation provided. However, it's still quite simple to install:
 
 ```sh
-git clone https://github.com/yannikschaelte/tex2svg ~/util/tex2svg
-ln -s ~/util/tex2svg/tex2svg.sh ~/bin/tex2svg
+mkdir ~/lib
+git clone https://github.com/yannikschaelte/tex2svg ~/lib/tex2svg
+ln -s ~/lib/tex2svg/tex2svg ~/bin/tex2svg
 ```
 
 Then make sure that ``~/bin`` is contained in the path, e.g. via ``export PATH = ~/bin:$PATH``, such that ``tex2svg`` can be found.
