@@ -10,8 +10,12 @@ fi
 
 BASE=~/lib/tex2svg
 
+VAL=$1
+
 # duplicate backslash
-VAL=$(echo $1 | sed 's/\\/\\\\/g')
+VAL=$(echo $VAL | sed 's/\\/\\\\/g')
+# ampersand
+VAL=$(echo $VAL | sed 's/&/\\&/g')
 
 sed "s/VAR/$VAL/g" $BASE/latex_fig_template.tex > $BASE/latex_fig.tex
 pdflatex -output-directory $BASE $BASE/latex_fig.tex
