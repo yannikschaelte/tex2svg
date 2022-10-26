@@ -20,7 +20,7 @@ The tool requires ``pdflatex``, ``pdf2svg`` to be available. These can easily be
  
 ## Installation
 
-Currently, there is no automatic installation provided. However, it's still quite simple to install:
+Currently, there is no automated installation. However, it's quite simple:
 
 ```sh
 mkdir ~/lib ~/bin
@@ -28,4 +28,4 @@ git clone https://github.com/yannikschaelte/tex2svg ~/lib/tex2svg
 ln -s ~/lib/tex2svg/tex2svg ~/bin/tex2svg
 ```
 
-Then make sure that ``~/bin`` is contained in the path, e.g. via ``export PATH = ~/bin:$PATH``, such that ``tex2svg`` can be found.
+Last, make sure that ``tex2svg`` can be found, e.g. via ``export PATH=$PATH:~/bin`` in `.bashrc`.
